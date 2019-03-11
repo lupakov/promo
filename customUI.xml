@@ -1,0 +1,43 @@
+
+<!-- This is example : Custom tab for your favorite macros Part 2   -->
+
+
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+
+  <!-- Add Custom tab to the ribbon with your favorite buttons-->
+  <!-- The example add five groups to the new tab -->
+  <!-- On the third group there is a menu with five options-->
+  <!-- On the fourth group there is a splitbutton example-->
+  <!-- On the fifth group there are button groups (the last one with built-in buttons)-->
+
+  <ribbon>
+    <tabs>
+      <tab id="COTab" label="Панель управления" insertAfterMso="TabHome">
+  
+	  <group id="lo" label="Редактор">
+		  <button id="btnEditorDownLoad0" label="Выгрузить неделю" size="large" onAction="downloadWeek" imageMso="RecoverInviteToMeeting" />	
+		  <button id="btnEditorDownLoad1" label="Выгрузить всё" size="large" onAction="downloadAll" imageMso="ExportExcel" />	
+		  <button id="btnEditorClear" label="Очистить редактор" size="large"  onAction="clearSheet"  imageMso="InkEraseMode" />
+      </group> 
+  
+  	  <group id="TemplateGroup" label="Процессы">
+          <button id="btnCheck1c" label="Проверить" size="large" onAction="checkData"  imageMso="FileCompatibilityChecker" />
+		  <button id="btnEditorCalc" label="Рассчитать" size="large" onAction="runData" imageMso="FileStartWorkflow" />
+		  <button id="btnChekMargin" label="Согласовать" size="large" onAction="acceptData" imageMso="AcceptInvitation" />
+		  <button id="btnChekMargin_del" label="Отменить" size="large" onAction="cancelData" imageMso="Delete" />		  
+       </group>
+    
+	  <group id="sv" label="СВЕМА"> 
+		  <button id="btnsvema" label="Сформировать шаблон" size="large" onAction="downloadRepSvema" imageMso="ReviewShareWorkbook" /> 
+      </group> 	
+	
+      </tab>
+    </tabs>
+  </ribbon>
+
+</customUI>
+
+
+
+
+
